@@ -1,0 +1,5 @@
+#!/bin/bash
+dig +short myip.opendns.com @resolver1.opendns.com
+ifconfig ens3 $1/24
+ifconfig ens3 $1 netmask 255.255.255.0
+dig +short myip.opendns.com @resolver1.opendns.com
